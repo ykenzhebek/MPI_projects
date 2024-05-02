@@ -93,13 +93,12 @@ int main(int argc, char** argv) {
 	MPI_Comm_rank(MPI_COMM_WORLD, &ProcRank);
 	MPI_Comm_size(MPI_COMM_WORLD, &ProcNum);
 	MPI_Status st;
-	//-------------����������� ������� ����� � ������������� �� �������� ------------------//
 	
-	GridSizeX = GsX; //GridSizeX>GridSizeY doljen bit bolwe
+	GridSizeX = GsX; 
 	GridSizeY = GsY;
-	CreateGridCommunicators();   //��������� ���������
-	BlockSizeX = n / GridSizeX;   // ������ ����� x
-	BlockSizeY = n / GridSizeY; //������ ����� y
+	CreateGridCommunicators();   
+	BlockSizeX = n / GridSizeX;   
+	BlockSizeY = n / GridSizeY; 
 
 	double h = 1.0 / (n - 1);
 	double T = 1.0;
@@ -108,9 +107,9 @@ int main(int argc, char** argv) {
 	double top, down, tk;
 	double A, B, C;
 	double *U, *U1, *U2;
-	U = new double[BlockSizeX*BlockSizeY]; //����
-	U1 = new double[BlockSizeX*BlockSizeY]; //����
-	U2 = new double[BlockSizeX*BlockSizeY]; //����
+	U = new double[BlockSizeX*BlockSizeY]; 
+	U1 = new double[BlockSizeX*BlockSizeY]; 
+	U2 = new double[BlockSizeX*BlockSizeY]; 
 	double *x = new double[n + 2];
 	double *y = new double[n + 2];
 	double *x1 = new double[BlockSizeY + 2];
@@ -154,7 +153,7 @@ int main(int argc, char** argv) {
 			}
 		}
 	}
-	//-------------�������� ������---------------------//
+	
 	if (ProcRank == 0) {
 		for (i = 1; i < n - 1; i++) {
 			for (j = 1; j < n - 1; j++) {
@@ -181,7 +180,7 @@ int main(int argc, char** argv) {
 		}*/
 	}
 	
-	CheckerboardMatrixScatter(M, U, n, BlockSizeX,BlockSizeY); // ������������� ������� �������
+	CheckerboardMatrixScatter(M, U, n, BlockSizeX,BlockSizeY);
 
 												  /* if (ProcRank == 3) {
 												   cout << endl << "Mblock = " << endl;
