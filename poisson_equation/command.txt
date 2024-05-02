@@ -1,0 +1,8 @@
+mpicc poisson_mpi.c -o poisson_mpi.o  && mpirun -np 2 ./poisson_mpi.o
+gcc -fopenmp poisson_openmp.c -o poisson_openmp.o && ./poisson_openmp.o
+mpicc -fopenmp poisson_hybrid.c -o poisson_hybrid.o && mpirun -np 2 ./poisson_hybrid.o
+
+cluster:
+mpicxx -fopenmp poisson_hybrid.c -o poisson_hybrid.o
+qsub runhybrid.sh
+qstat -u hpcuser07
