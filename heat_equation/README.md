@@ -1,6 +1,6 @@
 # Parallel Implementation of Thomas Algorithm for 2D Heat Equation
 
-This repository presents a parallel implementation of the Thomas algorithm for solving the two-dimensional heat equation using MPI. The numerical solution of the heat conduction problem is achieved through the two-step iteration process of the Alternating Direction Implicit (ADI) method.
+This repository presents a parallel implementation of the Thomas algorithm for solving the two-dimensional heat equation using MPI. The numerical solution of the heat conduction problem is achieved through the two-step iteration process of the Alternating Direction Implicit (ADI) method. [paper](https://doi.org/10.26577/JMMCS-2019-3-24)
 
 ## Contents
 
