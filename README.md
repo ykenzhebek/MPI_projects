@@ -1,6 +1,7 @@
 # MPI Projects
 
 This repository contains implementations of parallel algorithms for solving the Poisson equation and the two-dimensional heat equation using MPI, OpenMP, and hybrid MPI+OpenMP approaches.
+Also, repo contains some implemented MPI exercises.
 
 ## Contents
 
@@ -20,6 +21,18 @@ This repository contains implementations of parallel algorithms for solving the 
 - `heat_parallel_1D_decomposition.cpp`: Parallel program implementing the Thomas algorithm using 1D decomposition.
 - `heat_parallel_block_decomposition.cpp`: Parallel program implementing the Thomas algorithm using 2D (block) decomposition.
 - `run.sh`, `run1024.sh`, `run2048.sh`, `run4096.sh`, `run512.sh`: Shell scripts for running the programs with different matrix sizes.
+
+### MPI Practice Exercises
+This section contains various MPI practice exercises for learning and understanding MPI concepts and functions.
+- `io_mpi_file`: Implementation of MPI file I/O operations.
+- `creating_topology.cpp`: Example code demonstrating the creation of custom MPI topologies.
+- `ping-pong.cpp`: Implementation of the ping-pong communication pattern using MPI.
+- `p-pong_sendrecv.cpp`: Implementation of the ping-pong communication pattern using MPI_Sendrecv.
+- `ring.cpp`: Implementation of the ring communication pattern using MPI.
+- `simpson.cpp`: Implementation of numerical integration using Simpson's rule with MPI parallelization.
+- `trapezoidal_rule.cpp`: Implementation of numerical integration using the trapezoidal rule with MPI parallelization.
+
+These exercises provide practical hands-on experience with MPI programming concepts and techniques. They cover various aspects such as communication patterns, file I/O operations, custom topology creation, and parallel numerical computation.
 
 ## Running the Codes
 
