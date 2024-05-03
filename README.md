@@ -32,16 +32,6 @@ This section contains various MPI practice exercises for learning and understand
 - `simpson.cpp`: Implementation of numerical integration using Simpson's rule with MPI parallelization.
 - `trapezoidal_rule.cpp`: Implementation of numerical integration using the trapezoidal rule with MPI parallelization.
 
-These exercises provide practical hands-on experience with MPI programming concepts and techniques. They cover various aspects such as communication patterns, file I/O operations, custom topology creation, and parallel numerical computation.
-
-## Running the Codes
-
-Refer to the respective `run_*.sh` script in each folder for execution instructions on your system. Ensure that you have the necessary MPI and OpenMP compilers installed.
-
-## Cluster Execution
-
-The provided scripts are configured for execution on a cluster. Modify the PBS directives in the `.sh` files according to your cluster's requirements.
-
 ## Results and References
 
 Results for the Poisson equation solver can be found in the [article](https://doi.org/10.26577/JMMCS-2018-3-523), while results for the two-dimensional heat equation solver are available in the [paper](https://doi.org/10.26577/JMMCS-2019-3-24). These papers showcase the speedup and efficiency of the parallel algorithms, along with the details of their implementation and analysis.
