@@ -34,4 +34,4 @@ This section contains various MPI practice exercises for learning and understand
 
 ## Results and References
 
-Results for the Poisson equation solver can be found in the [article](https://doi.org/10.26577/JMMCS-2018-3-523), while results for the two-dimensional heat equation solver are available in the [paper](https://doi.org/10.26577/JMMCS-2019-3-24). These papers showcase the speedup and efficiency of the parallel algorithms, along with the details of their implementation and analysis.
+Results for the Poisson equation solver can be found in this [article](https://doi.org/10.26577/JMMCS-2018-3-523), while results for the two-dimensional heat equation solver are available in this [paper](https://doi.org/10.26577/JMMCS-2019-3-24). These papers showcase the speedup and efficiency of the parallel algorithms, along with the details of their implementation and analysis.
